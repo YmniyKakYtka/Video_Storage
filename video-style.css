@@ -39,6 +39,14 @@
     align-items: center;
 }
 
+.channel__name {
+    cursor: pointer;
+}
+
+.channel__name:hover {
+    text-decoration: underline;
+}
+
 .channel__avatar {
     width: 37px;
     height: 37px;
@@ -72,8 +80,17 @@
 .reputation__likes {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
     gap: 6px;
-    margin-right: 17px;
+    transition: 200ms;
+    border-radius: 20px 0 0 20px;
+    border-right: 1px solid var(--vs-yellow);
+}
+
+.reputation__likes:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
 }
 
 .reputation__hr {
@@ -83,17 +100,26 @@
 }
 
 .reputation__dislikes {
+    border-radius: 0 20px 20px 0;
     display: flex;
+    padding: 10px 20px 10px 20px;
     align-items: center;
     gap: 6px;
-    margin-left: 17px;
+    cursor: pointer;
+    transition: 200ms;
+    border-left: 1px solid var(--vs-yellow);
+}
+
+.reputation__dislikes:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
 }
 
 .reputation__text {
     font-family: var(--vs-russian-font);
     font-size: 14px;
     letter-spacing: -0.04em;
-
+    pointer-events: none;
     color: var(--vs-yellow);
 }
 
@@ -101,27 +127,45 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    padding: 10px;
+    transition: 200ms;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.share:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
 }
 
 .share__text {
     font-family: var(--vs-russian-font);
     font-size: 14px;
     letter-spacing: -0.04em;
-
+    pointer-events: none;
     color: var(--vs-yellow);
 }
 
 .report {
+    border-radius: 20px;
     display: flex;
     align-items: center;
     gap: 6px;
+    padding: 10px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.report:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
 }
 
 .report__text {
     font-family: var(--vs-russian-font);
     font-size: 14px;
     letter-spacing: -0.04em;
-
+    pointer-events: none;
     color: var(--vs-yellow);
 }
 
@@ -157,7 +201,7 @@
 }
 
 .description__text {
-    max-width: 700px;
+    max-width: 1100px;
     font-family: var(--vs-russian-font);
     font-size: 14px;
     line-height: 25px;
@@ -171,6 +215,22 @@
     display: flex;
     flex-direction: column;
     gap: 21px;
+}
+
+.sidebar-menu {
+    background-color: #1F1D1D;
+    z-index: 1;
+    padding: 0 20px 100vh 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.sidebar__case {
+    width: 420px;
+}
+
+.sidebar-mini {
+    display: none;
 }
 
 .case {
@@ -259,11 +319,16 @@
 }
 
 .commentaries__nick {
-    font-family: var(--vs-russian-font);
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     letter-spacing: -0.04em;
 
     color: var(--vs-yellow);
+}
+
+.commentaries__nick:hover {
+    text-decoration: underline;
 }
 
 .commentaries__time {
@@ -294,6 +359,30 @@
     gap: 20px;
 }
 
+.commentaries__like {
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.commentaries__like:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
+}
+
+.commentaries__dislike {
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.commentaries__dislike:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
+}
+
 .commentaries__answer {
     background-color: unset;
     border: none;
@@ -303,4 +392,53 @@
 
 .commentaries__answer:hover {
     text-decoration: underline;
+}
+
+.commentaries__input:focus ~ .commentaries__label,
+.commentaries__input:valid ~ .commentaries__label {
+    top: 0;
+    transition: 200ms;
+}
+
+.commentaries__input-box {
+    position: relative;
+}
+
+.commentaries__text-area {
+    position: relative;
+    display: block;
+    width: 90%;
+    background-color: unset;
+    padding: 5px 11px;
+    font-family: var(--vs-russian-font);;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    border: 0;
+    border-bottom: 1px solid var(--vs-yellow);
+    outline: 0;
+    resize: none;
+    color: var(--vs-yellow);
+}
+
+.commentaries__submit {
+    border-radius: 60px;
+    position: absolute;
+    padding: 15px;
+    left: 90%;
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/submit.svg");
+    background-repeat: no-repeat;
+    background-color: unset;
+    background-position: center center;
+    background-size: 20px 20px;
+    border: 0;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.commentaries__submit:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
 }

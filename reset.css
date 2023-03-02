@@ -12,3 +12,4 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 a {text-decoration: none; color: unset}
 input {outline: 0 !important;}
+textarea {outline: 0 !important;}

@@ -1,4 +1,4 @@
-let sidebar = document.querySelector('.sidebar');
+let sidebar = document.querySelector('.activating-sidebar');
 let headerMenu = document.querySelector('.header__menu');
 
 headerMenu.addEventListener('click', () => {
