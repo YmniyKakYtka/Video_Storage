@@ -210,13 +210,6 @@
     color: var(--vs-yellow);
 }
 
-.sidebar {
-    width: 420px;
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
-}
-
 .sidebar-menu {
     background-color: #1F1D1D;
     z-index: 1;
@@ -227,6 +220,13 @@
 
 .sidebar__case {
     width: 420px;
+}
+
+.video-sidebar {
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    gap: 21px;
 }
 
 .sidebar-mini {

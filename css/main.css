@@ -13,3 +13,38 @@ input::-webkit-search-results-decoration { display: none; }
 a {text-decoration: none; color: unset}
 input {outline: 0 !important;}
 textarea {outline: 0 !important;}
+
+/* ------------------------------------------------------------------------ */
+
+:root {
+    --vs-yellow: #FFE500;
+    --vs-highlighted: #413c3c;
+    --vs-background: #1F1D1D;
+    --vs-russian-font: "Didact Gothic", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--vs-background);
+}
+
+.wrapper {
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.disable {
+    display: none;
+}
