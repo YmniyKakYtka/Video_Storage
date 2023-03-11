@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     margin-top: 15px;
+    gap: 28px;
     padding-bottom: 20px;
 }
 
@@ -43,10 +44,22 @@
 .sidebar-menu-backgrounded {
     background-color: #1F1D1D;
     z-index: 1;
-    padding: 0 20px 100vh 20px;
+    padding: 0 20px 100vh 9px;
     position: absolute;
     top: 0;
+    transition: 200ms;
+}
+
+.sidebar-menu-backgrounded.disable {
+    display: block;
+    left: -20%;
+    transition: 200ms;
+}
+
+.sidebar-menu-backgrounded.able {
+    display: block;
     left: 0;
+    transition: 200ms;
 }
 
 .sidebar__block {
