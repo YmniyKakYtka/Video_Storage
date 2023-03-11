@@ -60,14 +60,14 @@
 
 .sidebar-menu-backgrounded.disable {
     display: block;
-    left: -20%;
-    transition: 200ms;
+    left: -100%;
+    transition: 300ms;
 }
 
 .sidebar-menu-backgrounded.able {
     display: block;
     left: 0;
-    transition: 200ms;
+    transition: 300ms;
 }
 
 .sidebar__block {
