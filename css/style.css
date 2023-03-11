@@ -190,7 +190,7 @@ body {
 }
 
 .logreg-body {
-    background-image: url("images/reglog/background.jpg");
+    background-image: url("../images/reglog/background.jpg");
     background-repeat: no-repeat;
     min-height: 98vh;
 }

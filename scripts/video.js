@@ -15,7 +15,7 @@ submitButton.addEventListener('click', () => {
     if(commentaryText.length > 0) {
         let div = document.createElement('div');
         div.className = "commentaries__case";
-        div.innerHTML = `<a href="#" class="commentaries__a"><img src="images/user.png" alt="avatar" class="commentaries__avatar"></a>
+        div.innerHTML = `<a href="#" class="commentaries__a"><img src="../images/user.png" alt="avatar" class="commentaries__avatar"></a>
                     <div class="commentaries__block">
                         <div class="commentaries__info">
                             <a href="#" class="commentaries__a"><p class="commentaries__nick">Гость</p></a>
@@ -23,8 +23,8 @@ submitButton.addEventListener('click', () => {
                         </div>
                         <p class="commentaries__text">${commentaryText}</p>
                         <div class="commentaries__reputation">
-                            <img src="images/like.svg" alt="like" class="commentaries__like">
-                            <img src="images/dislike.svg" alt="dislike" class="commentaries__dislike">
+                            <img src="../images/like.svg" alt="like" class="commentaries__like">
+                            <img src="../images/dislike.svg" alt="dislike" class="commentaries__dislike">
                             <button class="commentaries__answer">Ответить</button>
                         </div>
                     </div>`;

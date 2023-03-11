@@ -14,7 +14,7 @@
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url("images/menu-button.svg");
+    background-image: url("../images/menu-button.svg");
     background-color: unset;
     border: none;
     border-radius: 100px;
@@ -36,7 +36,7 @@
 
 .header__logo {
     padding: 5px 10px 5px 10px;
-    background-image: url("images/logo.svg");
+    background-image: url("../images/logo.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 135px 35px;
@@ -96,7 +96,7 @@
 }
 
 .header__search-submit:hover.header__search-submit:before {
-    background-image: url("images/search-black.svg");
+    background-image: url("../images/search-black.svg");
     transition: 200ms;
 }
 
@@ -113,7 +113,7 @@
     transform: rotate(45deg);
     top: 30%;
     left: 30%;
-    background-image: url("images/search.svg");
+    background-image: url("../images/search.svg");
     background-position: center center;
     background-repeat: no-repeat;
     transition: 200ms;
@@ -186,7 +186,7 @@
     }
     .header__logo {
         padding: 5px 10px 5px 10px;
-        background-image: url("images/mini-logo.svg");
+        background-image: url("../images/mini-logo.svg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 35px 35px;
