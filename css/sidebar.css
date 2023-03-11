@@ -3,6 +3,52 @@
     display: block;
 }
 
+.sidebar__main {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.sidebar-menu-backgrounded__button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/menu-button.svg");
+    background-color: unset;
+    border: none;
+    border-radius: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 200ms;
+}
+
+.sidebar-menu-backgrounded__button:hover {
+    background-color: var(--vs-highlighted);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.sidebar-menu-backgrounded__logo {
+    padding: 5px 10px 5px 10px;
+    background-image: url("../images/logo.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 135px 35px;
+    width: 155px;
+    height: 35px;
+    transition: 200ms;
+}
+
+.sidebar-menu-backgrounded {
+    background-color: #1F1D1D;
+    z-index: 1;
+    padding: 0 20px 100vh 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .sidebar__block {
     border-top: 1px solid rgb(255, 229, 0);
     display: flex;

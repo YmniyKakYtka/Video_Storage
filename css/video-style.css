@@ -1,6 +1,6 @@
 .video {
     margin: 38px 0 0 129px;
-    padding: 0 54px 40px 54px;
+    position: relative;
 }
 
 .vs-video {
@@ -208,14 +208,6 @@
     letter-spacing: 0.05em;
 
     color: var(--vs-yellow);
-}
-
-.sidebar-menu {
-    background-color: #1F1D1D;
-    z-index: 1;
-    padding: 0 20px 100vh 20px;
-    position: absolute;
-    left: 20px;
 }
 
 .sidebar__case {

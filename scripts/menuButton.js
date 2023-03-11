@@ -6,7 +6,7 @@ headerMenu.addEventListener('click', () => {
         sidebar.classList.remove('able');
         sidebar.classList.add('disable');
     } else {
-    sidebar.classList.remove('disable');
-    sidebar.classList.add('able');
+        sidebar.classList.remove('disable');
+        sidebar.classList.add('able');
     }
 });
