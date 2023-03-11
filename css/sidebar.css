@@ -3,6 +3,14 @@
     display: block;
 }
 
+.sidebar.disable {
+    display: none;
+}
+
+.sidebar.able {
+    display: block;
+}
+
 .sidebar__main {
     display: flex;
     align-items: center;
