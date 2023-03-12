@@ -1,33 +1,38 @@
 .videos {
     display: flex;
     flex-direction: column;
-    padding: 0 80px 80px 80px;
-    margin-top: 20px;
-    gap: 30px;
+    padding: 0 5rem 5rem 5rem;
+    margin-top: 1.25rem;
+    gap: 1.875rem;
 }
 
 .videos__row {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .video-block {
-    width: 269px;
-    height: 250px;
-    padding: 10px;
+    width: 16.8125rem;
+    height: 15.625rem;
+    padding: 0.625rem;
     transition: 100ms;
     border-radius: 2px;
 }
 
 .video-block__a {
-    height: 250px;
+    height: 15.625rem;
 }
 
 .video-block:hover {
-    width: 269px;
-    padding: 10px;
+    width: 16.8125rem;
+    padding: 0.625rem;
     background-color: var(--vs-highlighted);
     transition: 100ms;
+}
+
+.video-block__video-preview {
+    width: 16.8125rem;
+    height: 9.4375rem;
 }
 
 .video-block__name {
@@ -38,32 +43,32 @@
 .videos__channel-block {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .confirmed {
-    height: 10px;
-    width: 10px;
+    height: 0.625rem;
+    width: 0.625rem;
 
 }
 
 .videos__information {
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .video-block__statistic {
     display: flex;
     justify-content: space-between;
-    margin-top: 7px;
+    margin-top: 0.4375rem;
 }
 
 .video-block__statistic * {
     font-family: 'Heebo', sans-serif;
     font-weight: 300;
-    font-size: 9px;
+    font-size: 0.5625rem;
     letter-spacing: -0.04em;
 
     color: var(--vs-yellow);
@@ -81,10 +86,10 @@
     width: 100%;
     height: 5vh;
     background: var(--vs-background);
-    border-top: 2px solid var(--vs-highlighted);
+    border-top: 0.125rem solid var(--vs-highlighted);
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     display: none;
 }
 
