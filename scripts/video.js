@@ -5,9 +5,30 @@ textarea.addEventListener('keydown', function () {
     this.style.cssText = 'height:' + this.scrollHeight + 'px';
 })
 
+function getNoun(number, one, two, five) {
+    let n = Math.abs(number);
+    n %= 100;
+    if (n >= 5 && n <= 20) {
+        return five;
+    }
+    n %= 10;
+    if (n === 1) {
+        return one;
+    }
+    if (n >= 2 && n <= 4) {
+        return two;
+    }
+    return five;
+}
+
 let submitButton = document.querySelector('.commentaries__submit');
 let commentariesBlock = document.querySelector('.commentaries');
 let input = document.querySelector('.commentaries__text-area');
+let commentariesCounter = document.querySelector('.commentaries__count');
+
+let commentariesCount = document.querySelectorAll('.commentaries__case').length
+
+commentariesCounter.innerHTML = `${commentariesCount} ${getNoun(commentariesCount, 'комментарий', 'комментария', 'комментариев')}`;
 
 submitButton.addEventListener('click', () => {
     let commentaryText = input.value
@@ -30,5 +51,8 @@ submitButton.addEventListener('click', () => {
                     </div>`;
         commentariesBlock.append(div);
         input.value = '';
+        let commentariesCount = document.querySelectorAll('.commentaries__case').length
+
+        commentariesCounter.innerHTML = `${commentariesCount} ${getNoun(commentariesCount, 'комментарий', 'комментария', 'комментариев')}`;
     }
 });
