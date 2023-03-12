@@ -74,7 +74,6 @@
     border-top: 1px solid rgb(255, 229, 0);
     display: flex;
     flex-direction: column;
-    gap: 12px;
     padding: 18px 0 18px 0;
 }
 
@@ -82,23 +81,27 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    padding: 9px 9px 9px 9px;
-    transition: 200ms;
+    padding: 12px 15px 12px 15px;
+    border-radius: 5px;
+    transition: 100ms;
+    cursor: pointer;
 }
 
 .sidebar-case:hover {
     background-color: var(--vs-highlighted);
-    border-radius: 12px;
-    transition: 200ms;
+    transition: 100ms;
 }
 
 .sidebar-main-case__img {
-    width: 30px;
+    display: block;
+    height: 20px;
+    width: 20px;
 }
 
 .sidebar__title {
     font-family: var(--vs-russian-font);;
     font-size: 13px;
+    margin-bottom: 10px;
     letter-spacing: -0.04em;
 
     color: var(--vs-yellow);
@@ -130,11 +133,11 @@
     color: var(--vs-yellow);
     transition: 200ms;
     padding: 10px 0 10px 0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .sidebar__show-all:hover {
     background-color: var(--vs-highlighted);
-    transition: 200ms;
+    transition: 100ms;
     text-decoration: underline;
 }
