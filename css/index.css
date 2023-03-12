@@ -16,6 +16,7 @@
     height: 250px;
     padding: 10px;
     transition: 100ms;
+    border-radius: 2px;
 }
 
 .video-block__a {
