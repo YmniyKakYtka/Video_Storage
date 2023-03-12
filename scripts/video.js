@@ -1,9 +1,9 @@
 let textarea = document.querySelector('.commentaries__text-area');
-
-textarea.addEventListener('keydown', function () {
-    this.style.cssText = 'height:auto; padding:9px';
-    this.style.cssText = 'height:' + this.scrollHeight + 'px';
-})
+let submitButton = document.querySelector('.commentaries__submit');
+let commentariesBlock = document.querySelector('.commentaries');
+let input = document.querySelector('.commentaries__text-area');
+let commentariesCounter = document.querySelector('.commentaries__count');
+let commentariesCount = document.querySelectorAll('.commentaries__case').length
 
 function getNoun(number, one, two, five) {
     let n = Math.abs(number);
@@ -21,18 +21,7 @@ function getNoun(number, one, two, five) {
     return five;
 }
 
-let submitButton = document.querySelector('.commentaries__submit');
-let commentariesBlock = document.querySelector('.commentaries');
-let input = document.querySelector('.commentaries__text-area');
-let commentariesCounter = document.querySelector('.commentaries__count');
-
-let commentariesCount = document.querySelectorAll('.commentaries__case').length
-
-commentariesCounter.innerHTML = `${commentariesCount} ${getNoun(commentariesCount, 'комментарий', 'комментария', 'комментариев')}`;
-
-submitButton.addEventListener('click', () => {
-    let commentaryText = input.value
-
+function madeCommentary(commentaryText) {
     if(commentaryText.length > 0) {
         let div = document.createElement('div');
         div.className = "commentaries__case";
@@ -55,4 +44,16 @@ submitButton.addEventListener('click', () => {
 
         commentariesCounter.innerHTML = `${commentariesCount} ${getNoun(commentariesCount, 'комментарий', 'комментария', 'комментариев')}`;
     }
+}
+
+commentariesCounter.innerHTML = `${commentariesCount} ${getNoun(commentariesCount, 'комментарий', 'комментария', 'комментариев')}`;
+
+textarea.addEventListener('keydown', function () {
+    this.style.cssText = 'height:auto; padding:9px';
+    this.style.cssText = 'height:' + this.scrollHeight + 'px';
+})
+
+submitButton.addEventListener('click', () => {
+    let commentaryText = input.value
+    madeCommentary(commentaryText);
 });
