@@ -215,6 +215,7 @@
 }
 
 .video-sidebar {
+    margin-left: 10px;
     display: flex;
     width: 420px;
     flex-direction: column;
