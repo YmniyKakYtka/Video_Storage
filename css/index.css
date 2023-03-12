@@ -8,15 +8,15 @@
 
 .videos__row {
     display: flex;
-    gap: 0.625rem;
+    gap: 1.875rem;
 }
 
 .video-block {
     width: 16.8125rem;
     height: 15.625rem;
-    padding: 0.625rem;
+    padding: 0 0 0.625rem 0;
     transition: 100ms;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .video-block__a {
@@ -25,8 +25,7 @@
 
 .video-block:hover {
     width: 16.8125rem;
-    padding: 0.625rem;
-    background-color: var(--vs-highlighted);
+
     transition: 100ms;
 }
 
