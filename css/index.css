@@ -1,18 +1,21 @@
 .videos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 80px 80px 80px;
     margin-top: 20px;
-    padding-bottom: 80px;
+    gap: 30px;
+}
+
+.videos__row {
+    display: flex;
+    gap: 10px;
 }
 
 .video-block {
     width: 269px;
     height: 250px;
     padding: 10px;
-    transition: 200ms;
-    border-radius: 2px;
+    transition: 100ms;
 }
 
 .video-block__a {
@@ -23,8 +26,7 @@
     width: 269px;
     padding: 10px;
     background-color: var(--vs-highlighted);
-    border-radius: 20px;
-    transition: 200ms;
+    transition: 100ms;
 }
 
 .video-block__name {
